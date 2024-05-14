@@ -1,24 +1,42 @@
 @import "fonts";
+
 body {
-  font-family: 'Poppins' ;
+  font-family: 'Poppins';
+  background-color: transparent;
 }
 
-h1 {
-  font-family: 'Manrope';   
-  font-weight:400;
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  font-family: 'Poppins';
+  line-height: 1.1em;
+  letter-spacing: 0;
 }
 
-h2 {
-  font-family: 'Open Sans';   
+.h1 {
+  font-size: prem(70);
+  font-weight: 800;
+}
+
+.h2 {
+  font-size: prem(60);
+  font-weight: 800;
+}
+
+.h3 {
+  font-size: prem(48);
   font-weight: 600;
 }
 
-h3 {
-  font-family: "Poppins";   
-  font-weight:400;
+.h4 {
+  font-size: prem(40);
+  font-weight: 800;
 }
 
-h4 {
-  font-family: 'Times New Roman';   
-  font-weight:700;
+.h5 {
+  font-size: prem(38);
+  font-weight: 600; 
 }
+

@@ -1,3 +1,9 @@
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
 @font-face {
   font-family: Poppins;
   src: url(/css/fonts/Poppins-Regular.woff2) format("woff2");
@@ -62,24 +68,66 @@
   font-display: swap
 }
 body {
-  font-family: Poppins
+  font-family: Poppins;
+  background-color: transparent
 }
-h1 {
-  font-family: Manrope;
-  font-weight: 400
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  font-family: Poppins;
+  line-height: 1.1em;
+  letter-spacing: 0
 }
-h2 {
-  font-family: "Open Sans";
+.h1 {
+  font-size: 4.375rem;
+  font-weight: 800
+}
+.h2 {
+  font-size: 3.75rem;
+  font-weight: 800
+}
+.h3 {
+  font-size: 3rem;
   font-weight: 600
 }
-h3 {
+.h4 {
+  font-size: 2.5rem;
+  font-weight: 800
+}
+.h5 {
+  font-size: 2.375rem;
+  font-weight: 600
+}
+.container-btn {
+  display: inline-block;
+  min-width: 14.8125rem;
+  height: 5.375rem;
+  border: none;
+  text-align: center;
   font-family: Poppins;
-  font-weight: 400
+  font-weight: 600
 }
-h4 {
-  font-family: "Times New Roman";
-  font-weight: 700
+.container-btn > .btn {
+  line-height: 4.25rem;
+  border-radius: 2.5rem;
+  color: #f7f7fc;
+  background-color: #e43071;
+  font-size: 1rem;
+  margin: .5625rem 0
 }
-body {
-  display: block
+.container-btn > .btn:active,
+.container-btn > .btn:focus,
+.container-btn > .btn:hover {
+  margin: .5625rem;
+  background-color: #e43071;
+  -webkit-transition: .3s;
+  transition: .3s
+}
+.container-btn > .btn:focus {
+  outline: 9px solid #ffdae7
+}
+.container-btn > .btn:hover {
+  background-color: #be285e
 }

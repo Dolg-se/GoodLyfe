@@ -1,0 +1,31 @@
+.container-btn {
+  display: inline-block;
+  min-width: prem(237);
+  height: prem(86);
+  border: none;
+  text-align: center;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+.container-btn > .btn {
+  line-height: prem(68);
+  border-radius: prem(40);
+  color: $txt-btn;
+  background-color: $Premium-Pink;
+  font-size: 1rem;
+  margin: prem(9) 0;
+}
+
+.container-btn > .btn:hover, .container-btn > .btn:focus, .container-btn > .btn:active {
+  margin: prem(9);
+  background-color: $Premium-Pink;
+  transition: .3s;
+}
+.container-btn > .btn:focus {
+  outline: 9px solid $Pink-Subtle;
+}
+
+.container-btn > .btn:hover {
+  background-color: $Pink-Hover;
+}

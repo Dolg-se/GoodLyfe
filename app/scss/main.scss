@@ -1,7 +1,11 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 @import "base/base";
 
-body {
-	 display: block;
-}
+
 	
 	
